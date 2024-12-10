@@ -1,0 +1,70 @@
+from random import choice
+
+names = ["Thomas", "Miles", "Tom", "James", "William", "Tyler", "Elliot", "Louis"]
+insults = [
+  "you have the charisma of a damp rag",
+  "your brain's so minute, it's a wonder it can support your mouth",
+  "you're as bright as a black hole, and twice as dense",
+  "you bring everyone so much joy when you leave the room",
+  "you're not stupid; you just have bad luck thinking",
+  "your secrets are always safe with me. I never even listen when you tell me them",
+  "you are proof that evolution can go in reverse",
+  "you're like a cloud. When you disappear, it's a beautiful day",
+  "you're not pretty enough to be this dumb",
+  "your only purpose in life is to serve as a warning to others",
+  "you have the perfect face for radio",
+  "if ignorance is bliss, you must be the happiest person on the planet",
+  "you're the reason the gene pool needs a lifeguard",
+  "you're the human version of period cramps",
+  "you're the reason the middle finger was invented",
+  "you're the reason the average person believes in intelligent design",
+  "you're the reason the Titanic sank",
+  "you're the reason the dinosaurs went extinct",
+  "you're like a participation award - not really an achievement",
+  "you make Internet Explorer look fast",
+  "your coding style is as elegant as a fork in a power socket",
+  "you're about as useful as a chocolate teapot",
+  "you're like null - empty and causing problems",
+  "you have the problem-solving skills of a rubber duck",
+  "you're as organized as a randomized array",
+  "your logic has more holes than Swiss cheese",
+  "you're like Python's whitespace - unnecessarily strict and annoying",
+  "you crash more often than Windows Vista",
+  "you have the timing of a broken clock",
+  "your ideas are like expired milk",
+  "you bring a lot of enthusiasm to mediocre efforts",
+  "your jokes are as dry as the Sahara",
+  "you have a unique perspective that few understand",
+  "your sense of direction is exhilaratingly unpredictable",
+  "you manage to surprise everyone with your unpredictability",
+  "your ability to complicate simple tasks is impressive",
+  "you have an extraordinary talent for being consistently average",
+  "you contribute to conversations in remarkably unexpected ways",
+  "your consistency in avoiding responsibility is admirable",
+  "you excel at finding unconventional solutions",
+  "your approach keeps everyone on their toes",
+  "you have a knack for turning simple plans into adventures",
+  "your resourcefulness in navigating challenges is unique",
+  "you bring an unexpected twist to every situation",
+  "your unpredictability adds excitement to our routine",
+  "you have a distinct way of expressing yourself",
+  "your participation always keeps things interesting",
+  "you possess a creative take on everyday tasks",
+  "your ability to procrastinate is unparalleled",
+  "you're as useful as a screen door on a submarine",
+  "your ideas have all the depth of a puddle",
+  "you're the human equivalent of a software bug",
+  "your logic is as tangled as spaghetti code",
+  "you're about as reliable as a deprecated function",
+  "your problem-solving skills are in an infinite loop",
+  "you're the reason debugging exists",
+  "your contributions are like unclosed brackets—confusing and incomplete",
+  "you're as effective as a commented-out line of code"
+]
+def generate_insult():
+  return f"{choice(names)}, {choice(insults)}"
+
+while True:
+  print(generate_insult())
+  if input("Would you like another insult? (yes/no) ") != "yes":
+    break
